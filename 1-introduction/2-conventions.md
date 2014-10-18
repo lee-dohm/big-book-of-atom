@@ -1,6 +1,6 @@
 # Conventions
 
-This book uses a couple of typographic conventions for code and for keyboard shortcuts. Keyboard shortcuts (also called "accelerators" on some platforms) are referred to as "key bindings" by Atom. So that is how this book will refer to them as well.
+This book uses a couple of typographic conventions for code and for keyboard shortcuts. Keyboard shortcuts (also called "accelerators" on some platforms) are called "key bindings" by Atom. So that is how this book will refer to them as well.
 
 ## Code
 

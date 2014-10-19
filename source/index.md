@@ -1,5 +1,8 @@
-# Front Page
+# The Big Book of Atom
 
-This is the front page of your book. It can be reached by clicking the first link in the table of contents or by clicking the title of the book (on any page). This file must be named `index.md`.
+[Atom][atom] is an open-source, cross-platform text editor designed for use by programmers and built by [GitHub][github]. It is meant to be "a hackable editor for the 21st century". It borrows a lot from many of the other popular text editors that have come before it: TextMate, Sublime Text, even vi and emacs. But it does so in an unique way by building on top of Web technologies, by making things as modular as possible and, of course, keeping everything open-source.
 
-The first thing at the beginning of each page (including the front page) should be a heading (represented in markdown by `# Title`). This heading will be used in the table of contents and the page title (on the browser tab). If you do not have a heading on the page, we will use the filename to generate this information.
+This book seeks to become the definitive reference guide for the Atom editor.
+
+[atom]: https://atom.io
+[github]: https://github.com

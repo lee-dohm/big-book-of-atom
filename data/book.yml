@@ -1,8 +1,9 @@
 ---
-title: Example Book
-author: You
-github_url: https://github.com/yourname/example-book
-domain: http://yourname.github.io/example-book
-license_name: Attribution-ShareAlike
-license_url: https://creativecommons.org/licenses/by-sa/4.0
+title: The Big Book of Atom
+author: Lee Dohm
+github_url: https://github.com/lee-dohm/big-book-of-atom
+domain: http://lee-dohm.github.io/big-book-of-atom
+license_name: Attribution-NoDerivatives
+license_url: https://creativecommons.org/licenses/by-nd/4.0
 theme: glide
+copyright_year: 2014

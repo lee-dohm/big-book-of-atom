@@ -24,5 +24,5 @@ Is completely equivalent to this CSON:
 Notice the only changes were to remove the curly braces, the comma and reduce the indentation by one level (because the outermost object declaration is assumed).
 
 [json]: http://json.org/
-[json-instead]: /big-book-of-atom/appendices/using-javascript-and-json.html
+[json-instead]: /appendices/using-javascript-and-json.html
 [yaml]: http://www.yaml.org/

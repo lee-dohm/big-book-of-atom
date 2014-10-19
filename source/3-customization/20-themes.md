@@ -23,4 +23,4 @@ You can easily change your selected UI and Syntax themes through the Settings Vi
 
 ## Changing via Configuration File
 
-You can change your selected themes via direct editing of the `config.cson`, but it isn't recommended. If you accidentally change to a theme that isn't installed or make a typo, Atom could become unusable.
+You can change your selected themes via direct editing of the `config.cson`, but it isn't recommended. If you accidentally change to a theme that isn't installed or make a typo, Atom could become unusable. Atom stores the themes by their package name in a two-element array as `core.themes`, with the UI theme first in the list.

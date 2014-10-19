@@ -19,8 +19,8 @@ Speaking of Atom's package system, Atom is built in such a way that the majority
 * Commands
 * Key Bindings
 * Menus
-* Stylesheets
 * Snippets
+* Stylesheets
 
 These components can be combined in an infinite number of ways to create some truly astounding works of functionality and enable some amazing workflows.
 

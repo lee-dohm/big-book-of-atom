@@ -14,3 +14,4 @@ index.md: "/index.md"
   10-so-you-want-to-write-a-package.md: "/4-hacking/10-so-you-want-to-write-a-package.md"
 appendices:
   git-dependent-features.md: "/appendices/git-dependent-features.md"
+  using-javascript-and-json.md: "/appendices/using-javascript-and-json.md"

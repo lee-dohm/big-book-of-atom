@@ -7,6 +7,11 @@ task :generate do
   sh 'bundle exec middleman build'
 end
 
+desc 'Open the book locally'
+task :open do
+  sh 'open build/index.html'
+end
+
 desc 'Generate and push book to GitHub Pages'
 task :push => [:generate] do
   Dir.mktmpdir do |tmp|

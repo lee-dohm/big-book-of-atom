@@ -13,10 +13,11 @@ task :push => [:generate] do
     cp_r 'build/.', tmp
     Dir.chdir tmp
     sh 'git init'
+    sh 'git checkout -b gh-pages'
     sh 'git add .'
     message = "Site updated at #{Time.now.utc}"
     sh "git commit -m #{message.shellescape}"
     sh "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    sh 'git push --force origin gh_pages'
+    sh 'git push --force origin gh-pages'
   end
 end

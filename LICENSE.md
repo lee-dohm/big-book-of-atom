@@ -1,0 +1,1 @@
+The content of this online book is Copyright &copy; 2014 by [Lee Dohm](http://www.lee-dohm.com). It is licensed under the [Creative Commons](http://creativecommons.org) [Attribution-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nd/4.0/).

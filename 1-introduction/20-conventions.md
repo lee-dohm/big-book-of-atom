@@ -1,6 +1,6 @@
 # Conventions
 
-This book uses a couple of typographic conventions for code and for keyboard shortcuts. Keyboard shortcuts (also called "accelerators" on some platforms) are called "key bindings" by Atom. So that is how this book will refer to them as well.
+This book uses typographic conventions for code, keyboard shortcuts and command-line sections. Keyboard shortcuts (also called "accelerators" on some platforms) are called "key bindings" by Atom. So that is how this book will refer to them as well.
 
 ## Code
 
@@ -29,3 +29,11 @@ Key bindings will be rendered in a boxed monospaced format like this <kbd>Ctrl+X
 * Special keys such as Tab will be written in all caps: <kbd>TAB</kbd>
 * When keys are intended to be held down together such as the Control key and the X key at the same time, they will be joined by a plus sign "+": <kbd>Ctrl+X</kbd>
 * When keys are to be pressed separately, they will be separated by a space: <kbd>G I</kbd>
+
+## Command-Line Sections
+
+Command-line sections are blocks that represent a set of actions that are to be taken at the command-line of your respective operating system. This book uses the Unix convention of representing a command-line prompt with a dollar sign (`$`). All command-line examples will be written using Bash-compatible commands for simplicity. Command-line sections will be set apart in a block and colorized similarly to code blocks:
+
+```bash
+$ cp foo bar
+```

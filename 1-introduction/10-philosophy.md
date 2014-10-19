@@ -1,6 +1,6 @@
 # The Atom Philosophy
 
-The philosophy behind Atom boils down to two key tenets. Atom is built on Web technologies and it is designed to be very modular.
+The philosophy behind Atom boils down to three key tenets. Atom is built on Web technologies, it is designed to be very modular and, as much as possible, Atom is built around Git.
 
 ## Built on Web Technologies
 
@@ -22,4 +22,10 @@ Speaking of Atom's package system, Atom is built in such a way that the majority
 * Stylesheets
 * Snippets
 
+## Built around Git
+
+Atom assumes that you're going to use [Git][git] for your projects. As we'll see in future chapters, even Atom's concept of a project is predicated on the presence of a Git repository. A number of Atom's features are either significantly crippled or simply disabled completely if you're not using Git. For a list of some of the things that don't work without Git, see the appendix [Git-Dependent Features][git-dependent-features].
+
+[git]: http://git-scm.com
+[git-dependent-features]: /big-book-of-atom/appendices/git-dependent-features.html
 [packages]: https://atom.io/packages

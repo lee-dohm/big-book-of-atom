@@ -1,1 +1,1 @@
-# Git Dependent Features
+# Git-Dependent Features

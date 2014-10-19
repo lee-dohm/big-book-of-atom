@@ -1,6 +1,6 @@
 # Changing UI and Syntax Themes
 
-There are two types of theme packages in Atom: UI and Syntax themes. The Syntax theme specifically is for elements that show up in text editor views. It doesn't just determine what colors syntax highlighting uses but also:
+There are two types of theme packages in Atom: UI and Syntax themes. The Syntax theme specifically is for elements that show up in text editor views. It doesn't just determine what colors syntax highlighting uses, though that is its main purpose, but also:
 
 * Gutter elements
     * Line numbers

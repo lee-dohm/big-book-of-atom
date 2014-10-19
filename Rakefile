@@ -8,7 +8,7 @@ task :generate do
 end
 
 desc 'Open the book locally'
-task :open do
+task :open => [:generate] do
   sh 'open build/index.html'
 end
 

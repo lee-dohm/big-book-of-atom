@@ -3,12 +3,14 @@ index.md: "/index.md"
 1-introduction:
   10-philosophy.md: "/1-introduction/10-philosophy.md"
   20-conventions.md: "/1-introduction/20-conventions.md"
+  30-coffeescript-object-notation.md: "/1-introduction/30-coffeescript-object-notation.md"
 2-basic-operation:
   10-launching-atom.md: "/2-basic-operation/10-launching-atom.md"
   20-key-bindings.md: "/2-basic-operation/20-key-bindings.md"
-4-customization:
-  10-what-is-possible.md: "/4-customization/10-what-is-possible.md"
-5-hacking:
-  10-so-you-want-to-write-a-package.md: "/5-hacking/10-so-you-want-to-write-a-package.md"
+3-customization:
+  10-what-is-possible.md: "/3-customization/10-what-is-possible.md"
+  20-themes.md: "/3-customization/20-themes.md"
+4-hacking:
+  10-so-you-want-to-write-a-package.md: "/4-hacking/10-so-you-want-to-write-a-package.md"
 appendices:
   git-dependent-features.md: "/appendices/git-dependent-features.md"

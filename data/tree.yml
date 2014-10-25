@@ -5,8 +5,8 @@ index.md: "/index.md"
   20-conventions.md: "/1-introduction/20-conventions.md"
   30-coffeescript-object-notation.md: "/1-introduction/30-coffeescript-object-notation.md"
 2-basic-operation:
-  10-launching-atom.md: "/2-basic-operation/10-launching-atom.md"
-  20-key-bindings.md: "/2-basic-operation/20-key-bindings.md"
+  10-downloading-and-installing.md: "/2-basic-operation/10-downloading-and-installing.md"
+  20-launching-atom.md: "/2-basic-operation/20-launching-atom.md"
 3-customization:
   10-what-is-possible.md: "/3-customization/10-what-is-possible.md"
   20-themes.md: "/3-customization/20-themes.md"

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Conventions | The Big Book of Atom</title>
+
+    <!-- Styles and fonts -->
+    <link href="../themes/glide/stylesheets/glide.css" rel="stylesheet" type="text/css" />
+    <link href="../themes/glide/stylesheets/syntax.css" rel="stylesheet" type="text/css" />
+    <link href='//fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <script src="../themes/glide/javascripts/modernizr.js" type="text/javascript"></script>
+  </head>
+
+  <body class="x1-introduction x1-introduction_20-conventions glide">
+    <div class="page-wrapper">
+
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <header class="page-header" role="banner">
+<a class="invisilink" href="../">            <span class="book-title">The Big Book of Atom</span>
+</a>        <span class="book-author visuallyhidden">by Lee Dohm</span>
+      </header>
+
+        <div class="content-wrapper clearfix">
+
+          <section class="main-content" role="main">
+            <div class="main-content-source">
+              <h1>Conventions</h1>
+
+<p>There are some conventions that this book uses to more compactly and clearly communicate information.</p>
+
+<h2>Typographic</h2>
+
+<p>This book uses typographic conventions for code, keyboard shortcuts and command-line sections. Keyboard shortcuts (also called &ldquo;accelerators&rdquo; on some platforms) are called &ldquo;key bindings&rdquo; by Atom. So that is how this book will refer to them as well.</p>
+
+<h3>Code</h3>
+
+<p>This book will cover a number of topics that will require writing some amount of code. When code is presented inline, it will be rendered in a monospace font, like this: <code>foo = 5</code>. When a block of code is presented, it will be set apart in a block and colorized like this:</p>
+<pre class="highlight coffeescript"><span class="s">'global'</span><span class="o">:</span>
+  <span class="s">'editor'</span><span class="o">:</span>
+    <span class="s">'fontFamily'</span><span class="o">:</span> <span class="s">'SourceCodePro-Light'</span>
+    <span class="s">'preferredLineLength'</span><span class="o">:</span> <span class="mi">100</span>
+    <span class="s">'invisibles'</span><span class="o">:</span>
+      <span class="s">'cr'</span><span class="o">:</span> <span class="s">'↩'</span>
+      <span class="s">'tab'</span><span class="o">:</span> <span class="s">'⇥'</span>
+      <span class="s">'eol'</span><span class="o">:</span> <span class="s">' '</span>
+    <span class="s">'normalizeIndentOnPaste'</span><span class="o">:</span> <span class="no">false</span>
+    <span class="s">'showInvisibles'</span><span class="o">:</span> <span class="no">true</span>
+    <span class="s">'scrollPastEnd'</span><span class="o">:</span> <span class="no">true</span>
+</pre>
+
+<h3>Key Bindings</h3>
+
+<p>Key bindings will be rendered in a boxed monospaced format like this <kbd>Ctrl+X</kbd>. Because Atom is a cross-platform editor and because different platforms use different key bindings, and also because key bindings are so easy to change, we will <em>not</em> be referring to the key bindings of Atom commands in this text. In the section on key bindings, we will talk about how to determine what the key binding for a command is and how to set one or change one. But because it is occasionally helpful to refer to key bindings in the generic, there are some conventions we will follow:</p>
+
+<ul>
+<li>Letter keys will always be referred to in their capital form: <kbd>A</kbd>, <kbd>Z</kbd></li>
+<li>Modifier keys will have an initial capital and use their common abbreviation: <kbd>Ctrl</kbd>, <kbd>Alt</kbd></li>
+<li>Special keys such as Tab will be written in all caps: <kbd>TAB</kbd></li>
+<li>When keys are intended to be held down together such as the Control key and the X key at the same time, they will be joined by a plus sign &ldquo;+&rdquo;: <kbd>Ctrl+X</kbd></li>
+<li>When keys are to be pressed separately, they will be separated by a space: <kbd>G I</kbd></li>
+</ul>
+
+<h3>Command-Line Sections</h3>
+
+<p>Command-line sections are blocks that represent a set of actions that are to be taken at the command-line of your respective operating system. This book uses the Unix convention of representing a command-line prompt with a dollar sign (<code>$</code>). All command-line examples will be written using Bash-compatible commands for simplicity. Command-line sections will be set apart in a block and colorized similarly to code blocks:</p>
+<pre class="highlight shell"><span class="gp">$ </span>cp foo bar
+</pre>
+
+<h2>Atom Concepts</h2>
+
+<h3>Commands</h3>
+
+<p>Atom commands are always written in a certain format. There are two components to an Atom command name:</p>
+
+<ol>
+<li>The package or component</li>
+<li>The command</li>
+</ol>
+
+<p>By convention, all Atom commands are written in <a href="../appendices/definitions.html#casing">strike-case</a> and the two components are separated by a colon. For example, the command to toggle the Find and Replace panel at the bottom of the Atom window is <code>find-and-replace:toggle</code>.</p>
+
+<h3>Configuration Options</h3>
+
+<p>The Atom configuration system is an object hierarchy that can be infinitely nested. Paths through the hierarchy are dot-separated (<code>.</code>). Each package has its own namespace in the configuration. The package name is written in strike-case but after the namespace each path element is <a href="../appendices/definitions.html#casing">camel-cased</a>. For example, the configuration option that controls whether ignored names are hidden in the Tree View is <code>tree-view.hideIgnoredNames</code>.</p>
+
+            </div>
+            <nav class="main-content-nav clearfix" role="navigation">
+              <ul>
+                <li><a class="previous" href="10-philosophy.html">Previous</a></li>
+                <li><a class="next" href="30-coffeescript-object-notation.html">Next</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <aside class="aside-content" role="complementary">
+            <div class="aside-wrapper">
+
+              <div class="block table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav role="navigation">
+                  <ul>
+                    <li class='child '><a href="../">The Big Book of Atom</a></li><li class='parent'><span class='parent-label'>1 Introduction</span><ul><li class='child '><a href="10-philosophy.html">The Atom Philosophy</a></li><li class='child active'><a href="20-conventions.html">Conventions</a></li><li class='child '><a href="30-coffeescript-object-notation.html">CoffeeScript Object Notation</a></li></ul></li><li class='parent'><span class='parent-label'>2 Basic Operation</span><ul><li class='child '><a href="../2-basic-operation/10-downloading-and-installing.html">Downloading and Installing</a></li><li class='child '><a href="../2-basic-operation/20-launching-atom.html">Launching for the First Time</a></li></ul></li><li class='parent'><span class='parent-label'>3 Customization</span><ul><li class='child '><a href="../3-customization/10-what-is-possible.html">What Can One Customize?</a></li><li class='child '><a href="../3-customization/20-themes.html">Changing UI and Syntax Themes</a></li></ul></li><li class='parent'><span class='parent-label'>4 Hacking</span><ul><li class='child '><a href="../4-hacking/10-so-you-want-to-write-a-package.html">So You Want to Write a Package</a></li></ul></li><li class='parent'><span class='parent-label'>Appendices</span><ul><li class='child '><a href="../appendices/definitions.html">Definitions</a></li><li class='child '><a href="../appendices/git-dependent-features.html">Git-Dependent Features</a></li><li class='child '><a href="../appendices/using-javascript-and-json.html">Using JavaScript and JSON</a></li></ul></li>
+                  </ul>
+                </nav>
+              </div>
+              <!--
+              <div class="block translations">
+                <h3>Book translations</h3>
+                <p>This book is translated into
+                  <a href="#">Spanish</a>
+                  and <a href="#">English</a>.
+                  You can help with more translations <a href="https://github.com/lee-dohm/big-book-of-atom">on Github</a>.
+                </p>
+              </div>
+              -->
+            </div><!-- end aside-wrapper -->
+          </aside>
+
+        </div><!-- end content-wrapper -->
+
+      <footer class="page-footer">
+
+        <div class="footer-wrapper">
+          <!--
+          <div class="block downloads">&nbsp;
+            <h3>Downloads</h3>
+            <p>Download this book in
+                <a href="#">PDF</a>, <a href="#">mobi</a>, and <a href="#">epub</a>
+              form for free.
+            </p>
+          </div>
+          -->
+          <div class="block license">
+            <h3>License</h3>
+            <p>This book is licensed under the <a href="https://creativecommons.org/licenses/by-nd/4.0">Attribution-NoDerivatives</a> license.</p>
+          </div>
+
+          <div class="block open-source">
+            <h3>This book is open source</h3>
+            <p>The source of this book is <a href="https://github.com/lee-dohm/big-book-of-atom">hosted on Github</a>. Go, ahead. Check it out.</p>
+          </div>
+
+          <small class="small-text">Copyright &copy; 2014 by Lee Dohm</small>
+
+        </div><!-- end footer-wrapper -->
+
+      </footer>
+
+
+    </div><!-- end page-wrapper -->
+
+    <!-- include scripts just before the close of the body tag -->
+    <script src="../themes/glide/javascripts/anchor.min.js" type="text/javascript"></script>
+    <script src="../themes/glide/javascripts/glide.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Atom Philosophy | The Big Book of Atom</title>
+
+    <!-- Styles and fonts -->
+    <link href="../themes/glide/stylesheets/glide.css" rel="stylesheet" type="text/css" />
+    <link href="../themes/glide/stylesheets/syntax.css" rel="stylesheet" type="text/css" />
+    <link href='//fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <script src="../themes/glide/javascripts/modernizr.js" type="text/javascript"></script>
+  </head>
+
+  <body class="x1-introduction x1-introduction_10-philosophy glide">
+    <div class="page-wrapper">
+
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <header class="page-header" role="banner">
+<a class="invisilink" href="../">            <span class="book-title">The Big Book of Atom</span>
+</a>        <span class="book-author visuallyhidden">by Lee Dohm</span>
+      </header>
+
+        <div class="content-wrapper clearfix">
+
+          <section class="main-content" role="main">
+            <div class="main-content-source">
+              <h1>The Atom Philosophy</h1>
+
+<p>The philosophy behind Atom boils down to a few key tenets. Atom is built on Web technologies, it is designed to be very modular and, as much as possible, Atom is built around Git.</p>
+
+<h2>Built on Web Technologies</h2>
+
+<p>Atom is built on top of two key technologies, Chromium and Node.js. Chromium is the open-source framework upon which Google&rsquo;s Chrome browser is built, it provides the most basic parts of the UI system. Node.js is an engine that provides a stand-alone system for writing JavaScript applications, this gives Atom a framework for writing code that interfaces with the underlying operating system and also forms the basis of Atom&rsquo;s package system. Because of these underpinnings, the code of Atom is written almost completely in CoffeeScript or JavaScript and the UI is a standard combination of HTML and CSS/LESS.</p>
+
+<p>This creates some key benefits:</p>
+
+<ol>
+<li>For people who are already familiar with these technologies, their knowledge is immediately portable to Atom. The only thing that needs to be learned is the API and the conventions of the Atom framework.</li>
+<li>For people who haven&rsquo;t been doing Web work, there is a <em>ton</em> of reference material and tutorials on the Web that are directly applicable. This means that they can get up to speed <em>fast</em>.</li>
+</ol>
+
+<h2>Modular</h2>
+
+<p>Speaking of Atom&rsquo;s package system, Atom is built in such a way that the majority of Atom&rsquo;s functionality, beyond the most very basic text editing capabilities, is provided as a &ldquo;package&rdquo;. Packages are self-contained bits of code and configuration that can be installed, uninstalled and updated using apm, the Atom Package Manager, or through the Settings View. There is also a <a href="https://atom.io/packages">package registry</a> where one can discover new packages or find out more information about the packages that one already has installed. As of this writing, there are more than 70 packages built-in to Atom&rsquo;s default installation. Each package can provide one or more of the following:</p>
+
+<ul>
+<li>Code</li>
+<li>Commands</li>
+<li>Key Bindings</li>
+<li>Menus</li>
+<li>Snippets</li>
+<li>Stylesheets</li>
+</ul>
+
+<p>These components can be combined in an infinite number of ways to create some truly astounding works of functionality and enable some amazing workflows.</p>
+
+<h2>Built around Git</h2>
+
+<p>Atom assumes that you&rsquo;re going to use <a href="http://git-scm.com">Git</a> for your projects. As we&rsquo;ll see in future chapters, even Atom&rsquo;s concept of a project is predicated on the presence of a Git repository. A number of Atom&rsquo;s features are either significantly crippled or simply disabled completely if you&rsquo;re not using Git. For a list of some of the things that don&rsquo;t work without Git, see the appendix <a href="../appendices/git-dependent-features.html">Git-Dependent Features</a>.</p>
+
+            </div>
+            <nav class="main-content-nav clearfix" role="navigation">
+              <ul>
+                <li><a class="previous" href="../">Previous</a></li>
+                <li><a class="next" href="20-conventions.html">Next</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <aside class="aside-content" role="complementary">
+            <div class="aside-wrapper">
+
+              <div class="block table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav role="navigation">
+                  <ul>
+                    <li class='child '><a href="../">The Big Book of Atom</a></li><li class='parent'><span class='parent-label'>1 Introduction</span><ul><li class='child active'><a href="10-philosophy.html">The Atom Philosophy</a></li><li class='child '><a href="20-conventions.html">Conventions</a></li><li class='child '><a href="30-coffeescript-object-notation.html">CoffeeScript Object Notation</a></li></ul></li><li class='parent'><span class='parent-label'>2 Basic Operation</span><ul><li class='child '><a href="../2-basic-operation/10-downloading-and-installing.html">Downloading and Installing</a></li><li class='child '><a href="../2-basic-operation/20-launching-atom.html">Launching for the First Time</a></li></ul></li><li class='parent'><span class='parent-label'>3 Customization</span><ul><li class='child '><a href="../3-customization/10-what-is-possible.html">What Can One Customize?</a></li><li class='child '><a href="../3-customization/20-themes.html">Changing UI and Syntax Themes</a></li></ul></li><li class='parent'><span class='parent-label'>4 Hacking</span><ul><li class='child '><a href="../4-hacking/10-so-you-want-to-write-a-package.html">So You Want to Write a Package</a></li></ul></li><li class='parent'><span class='parent-label'>Appendices</span><ul><li class='child '><a href="../appendices/definitions.html">Definitions</a></li><li class='child '><a href="../appendices/git-dependent-features.html">Git-Dependent Features</a></li><li class='child '><a href="../appendices/using-javascript-and-json.html">Using JavaScript and JSON</a></li></ul></li>
+                  </ul>
+                </nav>
+              </div>
+              <!--
+              <div class="block translations">
+                <h3>Book translations</h3>
+                <p>This book is translated into
+                  <a href="#">Spanish</a>
+                  and <a href="#">English</a>.
+                  You can help with more translations <a href="https://github.com/lee-dohm/big-book-of-atom">on Github</a>.
+                </p>
+              </div>
+              -->
+            </div><!-- end aside-wrapper -->
+          </aside>
+
+        </div><!-- end content-wrapper -->
+
+      <footer class="page-footer">
+
+        <div class="footer-wrapper">
+          <!--
+          <div class="block downloads">&nbsp;
+            <h3>Downloads</h3>
+            <p>Download this book in
+                <a href="#">PDF</a>, <a href="#">mobi</a>, and <a href="#">epub</a>
+              form for free.
+            </p>
+          </div>
+          -->
+          <div class="block license">
+            <h3>License</h3>
+            <p>This book is licensed under the <a href="https://creativecommons.org/licenses/by-nd/4.0">Attribution-NoDerivatives</a> license.</p>
+          </div>
+
+          <div class="block open-source">
+            <h3>This book is open source</h3>
+            <p>The source of this book is <a href="https://github.com/lee-dohm/big-book-of-atom">hosted on Github</a>. Go, ahead. Check it out.</p>
+          </div>
+
+          <small class="small-text">Copyright &copy; 2014 by Lee Dohm</small>
+
+        </div><!-- end footer-wrapper -->
+
+      </footer>
+
+
+    </div><!-- end page-wrapper -->
+
+    <!-- include scripts just before the close of the body tag -->
+    <script src="../themes/glide/javascripts/anchor.min.js" type="text/javascript"></script>
+    <script src="../themes/glide/javascripts/glide.js" type="text/javascript"></script>
+  </body>
+</html>
